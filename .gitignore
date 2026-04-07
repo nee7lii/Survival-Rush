@@ -1,0 +1,21 @@
+# Build folder
+build/
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.out
+
+# Libraries
+*.dll
+*.so
+*.a
+
+# IDE files (Antigravite / others)
+.vscode/
+.idea/
+*.log
+
+# OS files
+.DS_Store
