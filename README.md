@@ -5,45 +5,55 @@
 - Student 2: [Yassine OUBELAID]
 
 ## Project Description
-Survival Rush is a 2D single-player survival game developed in C++. The player must run through the level, avoid randomly generated obstacles, jump or crouch when needed, and reach the bunker before the timer ends.
+Survival Rush is a simple 2D endless runner built in C++ with SFML. The player moves left and right, jumps over obstacles, crouches under pressure, and survives as long as possible while the score increases over time.
 
-## Main Features
-- Main menu
-- About screen
-- Play mode
-- Quit option
-- Player movement
+## Current Features
+- SFML game window
+- Real-time player movement
 - Jump and crouch actions
-- Random obstacle generation
+- Random obstacle spawning
 - Collision detection
-- Timer
-- Progress bar
-- Win and lose states
+- Score and elapsed time tracking
+- Restart after game over
+
+## Controls
+- Up / Space: jump
+- Down: crouch
+- Enter: restart after game over
+- Escape: quit
 
 ## Technologies
 - C++
 - Object-Oriented Programming
-- Git / GitHub
-- SFML
+- CMake
+- SFML 3
+
+## Build
+```bash
+cmake -S . -B build
+cmake --build build
+```
+
+## Run
+```bash
+./build/game
+```
 
 ## Project Structure
 ```text
 Survival-Rush/
-├── assets/
-│   ├── images/
-│   └── sounds/
 ├── build/
 ├── docs/
 ├── include/
 │   ├── Game.h
-│   ├── Menu.h
 │   ├── Obstacle.h
 │   └── Player.h
 ├── src/
 │   ├── Game.cpp
-│   ├── Menu.cpp
 │   ├── Obstacle.cpp
 │   ├── Player.cpp
 │   └── main.cpp
+├── CMakeLists.txt
 ├── .gitignore
 └── README.md
+```
